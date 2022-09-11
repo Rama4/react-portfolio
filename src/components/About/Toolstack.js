@@ -5,7 +5,10 @@ import {
   SiPostman,
   SiHeroku,
   SiVercel,
+  SiNetlify
 } from "react-icons/si";
+import {VscJson} from "react-icons/vsc";
+import {ImNpm} from "react-icons/im";
 
 function Toolstack() {
   return (
@@ -21,6 +24,15 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVercel />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <VscJson />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <ImNpm />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNetlify />
       </Col>
     </Row>
   );

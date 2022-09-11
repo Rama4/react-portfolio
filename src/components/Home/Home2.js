@@ -1,12 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import photo from "../../Assets/Aakarsh2.png"
+import photo from "../../Assets/Aakarsh2.png";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 function Home2() {
   return (
@@ -15,25 +13,19 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              <span className="purple"> ABOUT </span> ME
             </h1>
             <p className="home-about-body">
-            I am a  <i><b className="purple">Full Stack Developer </b></i>, passionate about building digital products that improve everyday experience for people.
-              <br />
-              <br />I am proficient in
+              <i>
+                <b className="purple">Full Stack Developer </b>
+              </i>
+              , who is passionate about building digital products that improve
+              everyday experience for people. Proficient in
               <i>
                 <b className="purple"> MERN Stack </b>
               </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b>
-              </i>
-              <br />
-              <br />
-              I love to work on exciting projects that test what I've learnt, 
-              also look forward to work in a challenging environment which gives me an opportunity to prove myself & provides me with an atmosphere in which I can learn & grow.
+              . Worked through 1000+ hours of Bootcamp structure learning
+              JavaScript, React.Js, Node.Js, MongoDB, Express, HTML5, and CSS3.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -44,15 +36,11 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
             <p>
               Feel free to <span className="purple">connect </span>with me
             </p>
             <p className="contact-font">
-              Email : <a className="purple mailto" href="mailto:aakarsh604@gmail.com">aakarsh604@gmail.com</a>
-            </p>
-            <p className="contact-font">
-              Mobile : <span className="purple">9739940543 </span>
+              Mobile : <span className="purple">+91 9739940543 </span>
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -67,7 +55,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/aakarsh-devadiga-416a901a5/"
+                  href="https://www.linkedin.com/in/aakarsh604/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,12 +65,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/a_aakarsh/"
+                  href="mailto:aakarsh604@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <SiGmail />
                 </a>
               </li>
             </ul>

@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
-import { CgGitFork } from "react-icons/cg";
 import pdf from "../Assets/Resume.pdf"
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlinePhone,
+  AiOutlineRocket
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -71,7 +70,7 @@ function NavBar() {
                 href="#skills"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Skills
+                <AiOutlineRocket style={{ marginBottom: "2px" }} /> Skills
               </Nav.Link>
             </Nav.Item>
 
@@ -89,6 +88,18 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
+                href="#contact"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlinePhone
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Contact
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
                 href={pdf}
                 target="_blank"
                 onClick={() => updateExpanded(false)}
@@ -97,7 +108,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item className="fork-btn">
+            {/* <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/aakarsh604/"
                 target="_blank"
@@ -106,7 +117,7 @@ function NavBar() {
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
-            </Nav.Item>
+            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

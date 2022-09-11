@@ -7,6 +7,8 @@ import editor from "../../Assets/Projects/gearbest.png";
 import chatify from "../../Assets/Projects/asos.png";
 import suicide from "../../Assets/Projects/caratlane.png";
 import bitsOfCode from "../../Assets/Projects/weather.png";
+import nykaa from "../../Assets/Projects/nykaa-clone.png";
+import myhours from "../../Assets/Projects/myhours.png";
 
 function Projects() {
   return (
@@ -21,15 +23,40 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={nykaa}
+              isBlog={false}
+              title="Nykaa.com Clone"
+              description="Cloned a full stack web application of an e-commerce website Nykaa, an online store of beauty and makeup products."
+              stacks="Tech Stack : React, Redux, Javascript, Chakra-Ui, Node, Express, MongoDB"
+              ghLink="https://github.com/AFFAN-AHMAD/Nykaa"
+              demoLink="https://funny-week-7983-affan-ahmad.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={myhours}
+              isBlog={false}
+              title="Myhours.com Clone"
+              description="My Hours - A fullstack web application built for anyone who want to keep a track of his project time, clients, teams."
+              stacks="Tech Stack :  React, Javascript, Chakra-Ui, Node, Express, MongoDB"
+              ghLink="https://github.com/aakarsh604/Myhours-clone"
+              demoLink="https://wonderful-dasik-3cd912.netlify.app/"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Clone of ASOS"
-              description="Asos is an e-commerce website. Have built the user flow of the website from sign up to placing the orders with cart updation feature and data managed with json server."
-              stacks="Tech Stack : REACT, REDUX, JAVASCRIPT, CHAKRA-UI"
+              title="Asos.com Clone"
+              description="Asos is an e-commerce website. Have built the user flow of the website from sign up to placing the orders with cart updation feature"
+              stacks="Tech Stack : React, Redux, Javascript, Chakra-Ui"
               ghLink="https://github.com/aakarsh604/Asos-Clone"
-              demoLink="https://famous-yeot-9daac6.netlify.app/"
+              demoLink="https://papaya-tarsier-65f2d1.netlify.app/"
             />
           </Col>
 
@@ -39,7 +66,7 @@ function Projects() {
               isBlog={false}
               title="Weather App"
               description="In this project I have built a web application to show a weather forecast using weather API. It shows city and current location based data with next 5 hours and 5 days forecast."
-              stacks="Tech Stack : REACT, JAVASCRIPT, TAILWIND-CSS, REST-API"
+              stacks="Tech Stack : React, Javascript, Tailwind-CSS, Rest-API"
               ghLink="https://github.com/aakarsh604/React_WeatherApp"
               demoLink="https://incandescent-toffee-012bd4.netlify.app/"
             />
@@ -49,9 +76,9 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Clone of Gearbest"
-              description="A famous e-commerce website. Have built the user flow of the website from sign up to placing the orders with, form and captcha validation, cart quantity updation feature and data managed with json server and local storage."
-              stacks="Tech Stack : HTML, CSS, JAVASCRIPT"
+              title="Gearbest.com Clone"
+              description="An e-commerce website. Have built the user flow of the website from sign up to placing the orders with, form and captcha validation, cart quantity updation."
+              stacks="Tech Stack : HTML5, CSS3, Javascript"
               ghLink="https://github.com/aakarsh604/Gearbest-Clone"
               demoLink="https://silly-queijadas-e172c2.netlify.app/"              
             />
@@ -59,23 +86,11 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Movie App"
-              description="Built a Movie Search app with help of HTML, CSS and Vanilla Javascript. There is also sign up and login functionality. This uses TMDB API to make search requests and display on the page."
-              stacks="Tech Stack : HTML, CSS, JAVASCRIPT"
-              ghLink="https://github.com/aakarsh604/movieapp"
-              demoLink="https://flourishing-mooncake-65c718.netlify.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Clone of CaratLane"
-              description="A famous e-commerce website. Have built the userflow of the website form sign up to placing the orders with, form and captcha validation, cart quantity updation feature and data managed with json server and local storage."
-              stacks="Tech Stack : HTML, CSS, JAVASCRIPT"
+              title="Caratlane.com Clone"
+              description="An e-commerce website. Have built the userflow of the website form sign up to placing the orders with, form and captcha validation, cart quantity updation feature."
+              stacks="Tech Stack : HTML5, CSS3, Javascript"
               ghLink="https://github.com/Shubham-46/CARAT-LANE-CLONE"
               demoLink="https://sensational-kheer-5c4a81.netlify.app/"              
             />

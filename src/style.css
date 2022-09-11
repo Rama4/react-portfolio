@@ -309,12 +309,18 @@ button:focus {
   font-size: 2em;
 }
 
-.myphoto{
-  border : 1px solid white;
+.myphoto {
+  border: 1px solid white;
   border-radius: 50%;
   background: rgba(246, 181, 255, 0.911);
   /* box-shadow: #68187a 16px 20px; */
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.find_me {
+  margin-top: -1em;
 }
 
 .myAvtar {
@@ -346,6 +352,7 @@ button:focus {
   padding-top: 50px;
   font-size: 1.2em !important;
   text-align: left;
+  line-height: 1.5em !important;
 }
 
 .home-about-social {
@@ -463,8 +470,8 @@ button:focus {
   background-image: var(--section-background-color) !important;
 }
 
-.projects-sections{
-  height : 80px;
+.projects-sections {
+  height: 80px;
 }
 
 .project-card {
@@ -554,8 +561,8 @@ button:focus {
   padding-top: 10px !important;
 }
 
-.skills-section{
-  margin-top : 150px !important;
+.skills-section {
+  margin-top: 150px !important;
 }
 
 /* --------- */
@@ -570,12 +577,39 @@ button:focus {
   color: white !important;
 }
 
+.contact-section {
+  height: max-content;
+  color: white !important;
+}
+
 .mailto {
   text-decoration: none;
 }
 
-.contact-font{
-  font-size : 20px;
+.contact-font {
+  font-size: 20px;
+}
+
+.contact_icons {
+  font-size: 2em;
+  display : flex;
+  align-items: center;
+  padding: 1rem 1.7em;
+  /* border: 1px solid white; */
+}
+
+.contact_info {
+  font-size: 0.7em;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.26);
+  text-decoration: none;
+  color: white;
+  padding : 0.3em 1em;
+}
+
+.contact_info:hover {
+  color: white;
+  box-shadow: 0 0 7px #87209e;
+  padding : 0.4em 1rem;
 }
 
 .tech-icons {
@@ -746,26 +780,4 @@ button:focus {
   100% {
     transform: scale(1);
   }
-}
-
-.fork-btn {
-  font-size: 1.1em !important;
-  padding-top: 10px !important;
-}
-
-.fork-btn-inner {
-  line-height: 1.4em !important;
-  background-color: #934cce5e !important;
-  padding: 0.25rem 1.1rem !important;
-  vertical-align: middle !important;
-  text-align: center !important;
-}
-
-.fork-btn-inner:hover {
-  transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
-}
-.fork-btn-inner::after {
-  display: none !important;
 }
