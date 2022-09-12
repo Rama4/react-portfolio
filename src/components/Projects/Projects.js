@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/movie.png";
 import editor from "../../Assets/Projects/gearbest.png";
 import chatify from "../../Assets/Projects/asos.png";
 import suicide from "../../Assets/Projects/caratlane.png";
@@ -29,8 +28,8 @@ function Projects() {
               imgPath={nykaa}
               isBlog={false}
               title="Nykaa.com Clone"
-              description="Cloned a full stack web application of an e-commerce website Nykaa, an online store of beauty and makeup products."
-              stacks="Tech Stack : React, Redux, Javascript, Chakra-Ui, Node, Express, MongoDB"
+              description="Full stack web application clone of an E-commerce website Nykaa, an online store to beauty and makeup products."
+              stacks="Tech Stack : React, Redux, Javascript, Chakra-UI, Node, Express, MongoDB"
               ghLink="https://github.com/AFFAN-AHMAD/Nykaa"
               demoLink="https://funny-week-7983-affan-ahmad.vercel.app/"
             />
@@ -41,8 +40,8 @@ function Projects() {
               imgPath={myhours}
               isBlog={false}
               title="Myhours.com Clone"
-              description="My Hours - A fullstack web application built for anyone who want to keep a track of his project time, clients, teams."
-              stacks="Tech Stack :  React, Javascript, Chakra-Ui, Node, Express, MongoDB"
+              description="Full stack web application clone built for anyone who want to keep a track of his project work time, clients, and teams."
+              stacks="Tech Stack :  React, Javascript, Chakra-UI, Node, Express, MongoDB"
               ghLink="https://github.com/aakarsh604/Myhours-clone"
               demoLink="https://wonderful-dasik-3cd912.netlify.app/"
             />
@@ -53,8 +52,8 @@ function Projects() {
               imgPath={chatify}
               isBlog={false}
               title="Asos.com Clone"
-              description="Asos is an e-commerce website. Have built the user flow of the website from sign up to placing the orders with cart updation feature"
-              stacks="Tech Stack : React, Redux, Javascript, Chakra-Ui"
+              description="Asos is an E-commerce website. Have built the user flow of the website from sign up to placing the orders with cart updation feature"
+              stacks="Tech Stack : React, Redux, Javascript, Chakra-UI"
               ghLink="https://github.com/aakarsh604/Asos-Clone"
               demoLink="https://papaya-tarsier-65f2d1.netlify.app/"
             />
@@ -65,7 +64,7 @@ function Projects() {
               imgPath={bitsOfCode}
               isBlog={false}
               title="Weather App"
-              description="In this project I have built a web application to show a weather forecast using weather API. It shows city and current location based data with next 5 hours and 5 days forecast."
+              description="A weather forecasting web application built using weather API. It shows city and current location based weather data with next 5 hours and 5 days forecast."
               stacks="Tech Stack : React, Javascript, Tailwind-CSS, Rest-API"
               ghLink="https://github.com/aakarsh604/React_WeatherApp"
               demoLink="https://incandescent-toffee-012bd4.netlify.app/"
@@ -77,7 +76,7 @@ function Projects() {
               imgPath={editor}
               isBlog={false}
               title="Gearbest.com Clone"
-              description="An e-commerce website. Have built the user flow of the website from sign up to placing the orders with, form and captcha validation, cart quantity updation."
+              description="A cloned web application of gearbest.com is an E-commerce platform selling an extensive range of goods from clothing, accessories, appliances, home-decor, and electronic gadgets."
               stacks="Tech Stack : HTML5, CSS3, Javascript"
               ghLink="https://github.com/aakarsh604/Gearbest-Clone"
               demoLink="https://silly-queijadas-e172c2.netlify.app/"              
@@ -89,7 +88,7 @@ function Projects() {
               imgPath={suicide}
               isBlog={false}
               title="Caratlane.com Clone"
-              description="An e-commerce website. Have built the userflow of the website form sign up to placing the orders with, form and captcha validation, cart quantity updation feature."
+              description="Web application clone of an E-commerce website caratlane.com selling diamonds and jewellery for both men and women."
               stacks="Tech Stack : HTML5, CSS3, Javascript"
               ghLink="https://github.com/Shubham-46/CARAT-LANE-CLONE"
               demoLink="https://sensational-kheer-5c4a81.netlify.app/"              

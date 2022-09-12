@@ -9,7 +9,7 @@ function AboutCard() {
   return (
     <Card className="quote-card-view">
       <Card.Body>
-        <Row className="contact_icons">
+        <Row className="contact_icons" style={{ justifyContent: "center" }} xs={1} md={2}>
           <Col>
             <BsLinkedin />
             <br />
@@ -35,7 +35,7 @@ function AboutCard() {
             </a>
           </Col>
         </Row>
-        <Row className="contact_icons">
+        <Row className="contact_icons" style={{ justifyContent: "center", padding : "50px"}} xs={1} md={2}>
           <Col>
             <GrMail />
             <br />
