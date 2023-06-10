@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import { Row, Col } from "react-bootstrap";
 import { BsLinkedin } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
-import { FaPhoneSquareAlt, FaGithubSquare } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
 
 function AboutCard() {
   return (
