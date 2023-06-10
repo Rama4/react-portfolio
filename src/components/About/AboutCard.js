@@ -14,24 +14,24 @@ function AboutCard() {
             <BsLinkedin />
             <br />
             <a
-              href="https://www.linkedin.com/in/aakarsh604/"
+              href="https://www.linkedin.com/in/rama-narasimhan/"
               target="_blank"
               rel="noreferrer"
               className="contact_info"
             >
-              aakarsh604
+              rama-narasimhan
             </a>
           </Col>
           <Col>
             <FaGithubSquare />
             <br />
             <a
-              href="https://github.com/aakarsh604"
+              href="https://github.com/Rama4"
               target="_blank"
               rel="noreferrer"
               className="contact_info"
             >
-              aakarsh604
+              Rama4
             </a>
           </Col>
         </Row>
@@ -40,23 +40,12 @@ function AboutCard() {
             <GrMail />
             <br />
             <a
-              href="mailto:aakarsh604@gmail.com"
+              href="mailto:m.rama.narasimhan@gmail.com"
               target="_blank"
               rel="noreferrer"
               className="contact_info"
             >
-              aakarsh604@gmail.com
-            </a>
-          </Col>
-          <Col>
-            <FaPhoneSquareAlt />
-            <br />
-            <a
-              href="tel:+919739940543"
-              rel="noreferrer"
-              className="contact_info"
-            >
-              +91 9739940543
+              m.rama.narasimhan@gmail.com
             </a>
           </Col>
         </Row>

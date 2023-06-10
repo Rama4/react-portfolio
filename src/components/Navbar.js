@@ -2,13 +2,11 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import pdf from "../Assets/Resume.pdf"
+import data from "../Assets/data.json";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
-  AiOutlineUser,
   AiOutlinePhone,
-  AiOutlineRocket
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -36,7 +34,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <strong className="purple namelogo">A D</strong>
+          <strong className="purple namelogo">Rama Narasimhan</strong>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -51,28 +49,28 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link href="#home" onClick={() => updateExpanded(false)}>
+              <Nav.Link href="#about" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 href="#about"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 href="#skills"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineRocket style={{ marginBottom: "2px" }} /> Skills
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
             <Nav.Item>
               <Nav.Link
@@ -100,9 +98,9 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href={pdf}
+                href={data.profile?.resume}
                 target="_blank"
-                onClick={() => updateExpanded(false)}
+                // onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
@@ -110,7 +108,7 @@ function NavBar() {
 
             {/* <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/aakarsh604/"
+                href="https://github.com/Rama4/"
                 target="_blank"
                 className="fork-btn-inner"
               >

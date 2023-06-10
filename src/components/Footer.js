@@ -6,6 +6,7 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import data from '../Assets/data.json';
 
 function Footer() {
   let date = new Date();
@@ -14,16 +15,13 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Made with ❤️ by Aakarsh Devadiga</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year}</h3>
+          <h3>Credit to Aakarsh Devadiga for the template</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/aakarsh604"
+                href={data.profile?.social?.github}
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -33,7 +31,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/aakarsh604/"
+                href={data.profile?.social?.linkedin}
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -43,7 +41,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="mailto:aakarsh604@gmail.com"
+                href={data.profile?.social?.email}
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"

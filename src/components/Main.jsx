@@ -1,14 +1,14 @@
 import React from 'react'
 import About from './About/About'
 import Contact from './Contact'
-import Home from './Home/Home'
+import Home2 from "./Home/Home2";
 import Projects from './Projects/Projects'
 
 const Main = () => {
   return (
     <div>
-        <Home/>
-        <About/>
+        <Home2/>
+        {/* <About/> */}
         <Projects/>
         <Contact/>
     </div>

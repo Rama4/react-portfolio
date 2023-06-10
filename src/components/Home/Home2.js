@@ -1,51 +1,55 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import photo from "../../Assets/Aakarsh2.png";
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import data from "../../Assets/data.json";
 
-function Home2() {
+const Home2 = () =>{
+
+  const renderAvatar = () => {
+    return (
+      <Col md={4} className="myAvtar">
+        <Tilt>
+          <img src="https://avatars.githubusercontent.com/u/19623200?s=400&u=5a2da11969fbc07f927096515727862504868627&v=4" className="img-fluid myphoto" alt="avatar" />
+        </Tilt>
+      </Col>
+    );
+  }
+
+  const renderBio = () => {
+    return (
+        <Col md={8} className="home-about-description">
+          <h1 style={{ fontSize: "2.6em" }}>
+            <span className="purple"> ABOUT </span> ME
+          </h1>
+
+          {data.profile?.bio?.map(b =>
+            <p className="home-about-body">{b}</p>
+          )}
+        </Col>
+      
+    );
+  }
+
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              <span className="purple"> ABOUT </span> ME
-            </h1>
-            <p className="home-about-body">
-              <i>
-                <b className="purple">Full Stack Developer </b>
-              </i>
-              , who is passionate about building digital products that improve
-              everyday experience for people. Proficient in
-              <i>
-                <b className="purple"> MERN Stack </b>
-              </i>
-              . Worked through 1000+ hours of Bootcamp structure learning
-              JavaScript, React.Js, Node.Js, MongoDB, Express, HTML5, and CSS3.
-            </p>
-          </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={photo} className="img-fluid myphoto" alt="avatar" />
-            </Tilt>
-          </Col>
+          {renderAvatar()}
+          {renderBio()}
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
             <p>
               Feel free to <span className="purple">connect </span>with me
             </p>
-            <p className="contact-font">
-              Mobile : <span className="purple">+91 9739940543 </span>
-            </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/aakarsh604"
+                  href={data.profile?.social?.github}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -55,7 +59,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/aakarsh604/"
+                  href={data.profile?.social?.linkedin}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -65,7 +69,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="mailto:aakarsh604@gmail.com"
+                  href={data.profile?.social?.email}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
